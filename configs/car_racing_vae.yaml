@@ -5,11 +5,12 @@ model_params:
 
 
 data_params:
-  data_path: "Data/"
+  data_path: "~/mlops/you_remake_it/data/car_racing/"
+  dataset: "CarRacing"
   train_batch_size: 64
   val_batch_size:  64
   patch_size: 64
-  num_workers: 4
+  num_workers: 6
 
 
 exp_params:
@@ -21,9 +22,9 @@ exp_params:
 
 trainer_params:
   gpus: [0]
-  max_epochs: 100
+  max_epochs: 40
 
 logging_params:
-  save_dir: "logs/"
-  name: "VanillaVAE"
+  save_dir: "~/mlops/you_remake_it/logs/"
+  name: "CarRacingVAE"
   
