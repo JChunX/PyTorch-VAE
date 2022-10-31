@@ -1,6 +1,6 @@
 import torch
 import unittest
-from models import VampVAE
+from pytorch_vae.models import VampVAE
 from torchsummary import summary
 
 

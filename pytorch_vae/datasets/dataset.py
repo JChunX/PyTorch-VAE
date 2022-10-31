@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
 from torchvision.datasets import CelebA
 import zipfile
-from datasets.car_racing_dataset import CarRacingDataset
+from pytorch_vae.datasets.car_racing_dataset import CarRacingDataset
 
 datasets = {'CarRacing': CarRacingDataset}
 

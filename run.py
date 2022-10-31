@@ -3,14 +3,14 @@ import yaml
 import argparse
 import numpy as np
 from pathlib import Path
-from models import *
-from experiment import VAEXperiment
+from pytorch_vae.models import *
+from pytorch_vae.experiment import VAEXperiment
 import torch.backends.cudnn as cudnn
 from pytorch_lightning import Trainer
 from pytorch_lightning.loggers import TensorBoardLogger
 from pytorch_lightning.utilities.seed import seed_everything
 from pytorch_lightning.callbacks import LearningRateMonitor, ModelCheckpoint
-from datasets.dataset import VAEDataset
+from pytorch_vae.datasets.dataset import VAEDataset
 from pytorch_lightning.plugins import DDPPlugin
 
 

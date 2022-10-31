@@ -1,6 +1,6 @@
 import torch
 import unittest
-from models import MIWAE
+from pytorch_vae.models import MIWAE
 from torchsummary import summary
 
 

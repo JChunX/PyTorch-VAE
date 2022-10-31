@@ -5,7 +5,7 @@ model_params:
 
 
 data_params:
-  data_path: "~/mlops/you_remake_it/data/car_racing/"
+  data_path: "/home/jasonx/mlops/you_remake_it/data/car_racing/"
   dataset: "CarRacing"
   train_batch_size: 64
   val_batch_size:  64
@@ -25,6 +25,6 @@ trainer_params:
   max_epochs: 40
 
 logging_params:
-  save_dir: "~/mlops/you_remake_it/logs/"
+  save_dir: "/home/jasonx/mlops/you_remake_it/logs/"
   name: "CarRacingVAE"
   
