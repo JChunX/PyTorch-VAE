@@ -30,9 +30,10 @@ Here are the [results](https://github.com/AntixK/PyTorch-VAE/blob/master/README.
 
 ### Installation
 ```
-$ git clone https://github.com/AntixK/PyTorch-VAE
+$ git clone <url.git>
 $ cd PyTorch-VAE
 $ pip install -r requirements.txt
+$ pip install -e .
 ```
 
 ### Usage
