@@ -88,14 +88,11 @@ class VAEDataset(LightningDataModule):
         self.num_workers = num_workers
         self.pin_memory = pin_memory
         
-        self.train_transforms = transforms.Compose([transforms.RandomHorizontalFlip(),
-                                              transforms.CenterCrop(148),
+        self.train_transforms = transforms.Compose([transforms.ColorJitter(brightness=0.1, contrast=0.1, saturation=0.1, hue=0.1),
                                               transforms.Resize(self.patch_size),
                                               transforms.ToTensor(),])
         
-        self.val_transforms = transforms.Compose([transforms.RandomHorizontalFlip(),
-                                            transforms.CenterCrop(148),
-                                            transforms.Resize(self.patch_size),
+        self.val_transforms = transforms.Compose([transforms.Resize(self.patch_size),
                                             transforms.ToTensor(),])
         
         self.dataset = datasets[kwargs["dataset"]]
