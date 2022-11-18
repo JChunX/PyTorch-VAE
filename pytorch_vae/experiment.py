@@ -12,12 +12,12 @@ from torchvision.datasets import CelebA
 from torch.utils.data import DataLoader
 
 
-class VAEXperiment(pl.LightningModule):
+class VAEExperiment(pl.LightningModule):
 
     def __init__(self,
                  vae_model: BaseVAE,
                  params: dict) -> None:
-        super(VAEXperiment, self).__init__()
+        super(VAEExperiment, self).__init__()
 
         self.model = vae_model
         self.params = params
